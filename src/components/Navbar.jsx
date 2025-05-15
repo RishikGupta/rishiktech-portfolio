@@ -13,7 +13,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                         Rishik<span className="text-blue-500">.dev</span>
                     </a>
 
-                    <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}
+                    <div className="w-10 h-10 text-3xl flex items-center justify-center cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}
                     >
                         &#9776;
                     </div>
