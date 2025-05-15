@@ -6,9 +6,6 @@ export const Home = () => {
         className="min-h-screen flex items-center justify-center relative"
       >
         <RevealOnScroll>
-          <div className="p-6 bg-white text-black dark:bg-black dark:text-white">
-  This will change color with dark mode toggle.
-</div>
 
           <div className="text-center z-10 px-4">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
