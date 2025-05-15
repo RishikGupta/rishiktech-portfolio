@@ -1,3 +1,5 @@
+import { ThemeToggle } from "./ThemeToggle";
+
 export const MobileMenu = ({menuOpen, setMenuOpen}) => {
 
     return (
@@ -53,6 +55,7 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
             >
                 Contact
             </a>
+            <ThemeToggle />
 
         </div>
     );

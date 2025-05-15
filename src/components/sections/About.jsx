@@ -40,7 +40,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20 bg-black"
+      className="min-h-screen flex items-center justify-center py-20 bg-theme text-theme"
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
@@ -48,34 +48,34 @@ export const About = () => {
             About Me
           </h2>
 
-          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all shadow-lg bg-[#0b0b0b]">
-            <p className="text-gray-300 mb-6 leading-relaxed text-base">
+          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all shadow-lg bg-section">
+            <p className="text-muted mb-6 leading-relaxed text-base">
               My journey includes leading the Admin Panel development for{" "}
               <strong>Beaded Muse</strong>, a full-stack e-commerce platform
               built as my <strong>capstone project at Conestoga College</strong>
-              . In parallel, I’ve taught over 500 students, covering both
+              . In parallel, I've taught over 500 students, covering both
               front-end technologies like HTML, CSS, JavaScript, React, and
               MongoDB, as well as core programming languages such as Java, C,
               C++, and Python.
             </p>
-            <p className="text-gray-300 mb-6 leading-relaxed text-base">
-              I’ve also guided many through mastering Data Structures and
+            <p className="text-muted mb-6 leading-relaxed text-base">
+              I've also guided many through mastering Data Structures and
               Algorithms (DSA) for academic and technical interview success.
-              Whether it’s building dynamic Stripe-integrated systems, crafting
+              Whether it's building dynamic Stripe-integrated systems, crafting
               responsive UI/UX, or mentoring learners with patience and clarity,
               I bring precision, creativity, and empathy into everything I
               build.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-              <div className="rounded-xl p-6 border border-white/10 hover:border-blue-500 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4 text-white">Frontend</h3>
+              <div className="rounded-xl p-6 border hover:border-blue-500 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4 text-theme">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/10 text-blue-300 py-1.5 px-4 rounded-full text-sm 
-                      hover:bg-blue-500/20 hover:text-white transition-all duration-200 shadow-sm"
+                      className="bg-badge text-badge py-1.5 px-4 rounded-full text-sm transition duration-200 
+             hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
                     >
                       {tech}
                     </span>
@@ -83,14 +83,14 @@ export const About = () => {
                 </div>
               </div>
 
-              <div className="rounded-xl p-6 border border-white/10 hover:border-blue-500 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4 text-white">Backend</h3>
+              <div className="rounded-xl p-6 border hover:border-blue-500 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4 text-theme">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/10 text-blue-300 py-1.5 px-4 rounded-full text-sm 
-                      hover:bg-blue-500/20 hover:text-white transition-all duration-200 shadow-sm"
+                      className="bg-badge text-badge py-1.5 px-4 rounded-full text-sm transition duration-200 
+             hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
                     >
                       {tech}
                     </span>
@@ -101,21 +101,19 @@ export const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div
-              className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
-            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-            >
-              <h3 className="text-xl font-bold mb-4 text-white flex items-center gap-2">
-                <FaGraduationCap className="text-blue-400" /> Education
+            {/* Education */}
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition bg-section">
+              <h3 className="text-xl font-bold mb-4 text-theme flex items-center gap-2">
+                <FaGraduationCap className="text-accent" /> Education
               </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
+              <ul className="list-disc list-inside text-theme space-y-2 text-sm">
                 <li>
                   <strong>Post Graduate Degree in Web Development</strong> -
                   Conestoga College (January 2024 - April 2025)
-                  <p className="ml-5 mt-1 text-gray-400 text-xs italic">
+                  <p className="ml-5 mt-1 text-muted font-bold text-xs">
                     Relevant Coursework:
                   </p>
-                  <ul className="list-disc list-inside ml-5 mt-1 text-gray-400 text-xs italic">
+                  <ul className="list-disc list-inside ml-5 mt-1 text-muted font-medium text-xs italic">
                     <li>Web Development Foundations (HTML, CSS, JavaScript)</li>
                     <li>JavaScript Frameworks (React, Vue)</li>
                     <li>
@@ -136,12 +134,11 @@ export const About = () => {
                 </li>
                 <li>
                   <strong>B.Tech in Computer Science</strong> - Bharati
-                  Vidyapeeth's College of Engineering (August 2017 - September
-                  2021)
-                  <p className="ml-5 mt-1 text-gray-400 text-xs italic">
+                  Vidyapeeth's College of Engineering (Aug 2017 – Sep 2021)
+                  <p className="ml-5 mt-1 text-muted font-bold text-xs">
                     Relevant Coursework:
                   </p>
-                  <ul className="list-disc list-inside ml-5 mt-1 text-gray-400 text-xs italic">
+                  <ul className="list-disc list-inside ml-5 mt-1 font-medium text-muted text-xs italic">
                     <li>Data Structures and Algorithms</li>
                     <li>Object Oriented Programming</li>
                     <li>Web Technology</li>
@@ -163,31 +160,37 @@ export const About = () => {
               </ul>
             </div>
 
+            {/* Work Experience */}
             <div
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
-  hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+  hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition bg-section"
             >
-              <h3 className="text-xl font-bold mb-4 text-white flex items-center gap-2">
-                <FaBriefcase className="text-blue-400" /> Work Experience
+              <h3 className="text-xl font-bold mb-4 text-theme flex items-center gap-2">
+                <FaBriefcase className="text-accent" /> Work Experience
               </h3>
-              <div className="space-y-4 text-gray-300 text-sm">
+              <div className="space-y-4 text-muted text-sm">
                 <div>
-                  <h4 className="font-semibold text-white">
-                    Full Stack Tutor & Technical Mentor - Super Prof & Varsity Tutors (Part-Time)
-                    <span className="block text-blue-400 text-xs italic">
-                       January 2024 - Present
+                  <h4 className="font-semibold text-theme">
+                    Full Stack Tutor & Technical Mentor - Super Prof & Varsity
+                    Tutors (Part-Time)
+                    <span className="block text-accent text-xs italic">
+                      January 2024 - Present
                     </span>
                   </h4>
                   <p>
-                    Taught 50+ students across 90+ hours via online platforms, delivering customized lessons in full-stack web development and core programming (JavaScript, React, Node.js, Java, Python, etc.). Supported learners through academic projects, technical interview prep, and real-world problem-solving using the MERN stack.
-
+                    Taught 50+ students across 90+ hours via online platforms,
+                    delivering customized lessons in full-stack web development
+                    and core programming (JavaScript, React, Node.js, Java,
+                    Python, etc.). Supported learners through academic projects,
+                    technical interview prep, and real-world problem-solving
+                    using the MERN stack.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-theme">
                     Technical Trainer - Cantilever Labs
-                    <span className="block text-blue-400 text-xs italic">
+                    <span className="block text-accent text-xs italic">
                       January 2023 - October 2023
                     </span>
                   </h4>
@@ -200,9 +203,9 @@ export const About = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-theme">
                     Software Trainer - Edslash Robotics Services
-                    <span className="block text-blue-400 text-xs italic">
+                    <span className="block text-accent text-xs italic">
                       October 2022 - October 2023
                     </span>
                   </h4>
@@ -216,9 +219,9 @@ export const About = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-theme">
                     Technology Trainer - Hematite Infotech Pvt. Ltd.
-                    <span className="block text-blue-400 text-xs italic">
+                    <span className="block text-accent text-xs italic">
                       April 2022 - September 2022
                     </span>
                   </h4>
@@ -232,9 +235,9 @@ export const About = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-theme">
                     Software Developer - ULaunch
-                    <span className="block text-blue-400 text-xs italic">
+                    <span className="block text-accent text-xs italic">
                       October 2021 - March 2022
                     </span>
                   </h4>

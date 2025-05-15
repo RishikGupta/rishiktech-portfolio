@@ -1,28 +1,180 @@
 @import "tailwindcss";
 
-html, body {
+:root {
+  /* Light theme */
+  --section-bg: #f9fafb;
+  --bg-color: #ffffff;
+  --text-color: #111827;
+  --text-muted: #343536;
+  --accent-color: #2563eb;
+  --accent-light: #38bdf8;
+  --card-bg: #f9fafb;
+  --border-color: #0c0c0c;
+  --navbar-bg: rgba(70, 67, 67, 0.8);
+  --link-color: #2563eb;
+  --link-hover: #1d4ed8;
+  --badge-bg: #dbeafe;
+  --badge-hover-bg: #bfdbfe;
+  --badge-text: #1e3a8a;
+  --badge-hover-text: #101010;
+}
+
+[data-theme="dark"] {
+  --section-bg: #0b0b0b;
+  --bg-color: #0a0a0a;
+  --text-color: #f3f4f6;
+  --text-muted: #d1d5db;
+  --accent-color: #3b82f6;
+  --accent-light: #22d3ee;
+  --card-bg: #0b0b0b;
+  --border-color: #fff;
+  --navbar-bg: rgba(10, 10, 10, 0.8);
+  --link-color: #3b82f6;
+  --link-hover: #60a5fa;
+  --badge-bg: rgba(59, 130, 246, 0.1);
+  --badge-hover-bg: rgba(59, 130, 246, 0.2);
+  --badge-text: #3b82f6;
+  --badge-hover-text: #ffffff;
+}
+
+.bg-section {
+  background-color: var(--section-bg);
+}
+
+.bg-theme {
+  background-color: var(--bg-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.bg-badge {
+  background-color: var(--badge-bg);
+}
+
+.bg-badge-hover {
+  background-color: var(--badge-hover-bg);
+}
+
+.text-theme {
+  color: var(--text-color);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-button {
+  color: var(--button-text);
+}
+
+.text-badge {
+  color: var(--badge-text);
+}
+
+.border-theme {
+  border-color: var(--border-color);
+}
+
+.button-accent {
+  background-color: var(--accent-color);
+  color: var(--button-text);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+  transition: all 0.3s ease;
+}
+
+.button-outline {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.button-outline:hover {
+  background-color: var(--badge-hover-bg);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.badge {
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  background-color: var(--badge-hover-bg);
+  color: var(--badge-hover-text);
+}
+
+.placeholder-muted::placeholder {
+  color: var(--text-muted);
+}
+
+.hover\:bg-badge-hover:hover {
+  background-color: var(--badge-hover-bg);
+}
+
+.hover\:text-white:hover {
+  color: #ffffff;
+}
+
+.hover\:shadow-accent:hover {
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+.gradient-accent {
+  background-image: linear-gradient(to right, var(--accent-color), var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-glow {
+  background-image: linear-gradient(to right, var(--accent-color), var(--accent-light));
+}
+
+.bg-navbar-bg {
+  background-color: var(--navbar-bg);
+}
+
+
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: "Space Grtoesk", sans-serif;
-  background: #0a0a0a;
-  color: #f3f4f6;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 @layer utilities {
   @keyframes blink {
-    0%, 100% {
+
+    0%,
+    100% {
       opacity: 1;
     }
-    50% { 
+
+    50% {
       opacity: 0;
     }
-    
+
   }
 
   .animate-blink {
-    animation: blink 0.8s step-end infinite  ;
-    -webkit-animation: blink 0.8s step-end infinite  ;
-} 
+    animation: blink 0.8s step-end infinite;
+    -webkit-animation: blink 0.8s step-end infinite;
+  }
 
 
   @keyframes loading {
@@ -33,6 +185,7 @@ html, body {
       -ms-transform: translateX(-100%);
       -o-transform: translateX(-100%);
     }
+
     100% {
       transform: translateX(250%);
       -webkit-transform: translateX(250%);
@@ -45,7 +198,7 @@ html, body {
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
     -webkit-animation: loading 0.8s ease infinite;
-}
+  }
 }
 
 .reveal {

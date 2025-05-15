@@ -1,37 +1,36 @@
-import { useEffect } from "react";
-import { useState } from "react"
+import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
-    const [text, setText] = useState("")
-    const fullText = "<Fetching portfolio data from localhost.../>";
+  const [text, setText] = useState("");
+  const fullText = "<Fetching portfolio data from localhost.../>";
 
-    useEffect(() => {
-        let index = 0;
-        const interval = setInterval(() => {
-            setText(fullText.substring(0, index))
-            index++;
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setText(fullText.substring(0, index));
+      index++;
 
-            if(index > fullText.length)
-                clearInterval(interval);
+      if (index > fullText.length) {
+        clearInterval(interval);
+      }
 
-            setTimeout(() => {
-                onComplete();
-            }, 4500)
+      setTimeout(() => {
+        onComplete();
+      }, 4500);
+    }, 70);
 
-        }, 70);
-        return () => clearInterval(interval);
-    }, [onComplete]);
+    return () => clearInterval(interval);
+  }, [onComplete]);
 
-    return <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
-        <div className="mb-4 text-4xl font-mono font-bold">
-            {text} <span className="animate-blink ml-1"> | </span>
-        </div>
+  return (
+    <div className="fixed inset-0 z-50 bg-theme text-theme flex flex-col items-center justify-center transition-colors duration-300">
+      <div className="mb-4 text-4xl font-mono font-bold">
+        {text} <span className="animate-blink ml-1">|</span>
+      </div>
 
-        <div className="w-[200px] h-[2px] bg-gray-800 rounded relative overflow-hidden ">
-            <div className="w-[40%] h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar">
-                {" "}
-            </div>
-        </div>
-
+      <div className="w-[200px] h-[2px] bg-[var(--border-color)] rounded relative overflow-hidden">
+        <div className="w-[40%] h-full bg-[var(--accent-color)] shadow-[0_0_15px_var(--accent-color)] animate-loading-bar" />
+      </div>
     </div>
-}
+  );
+};
