@@ -3,32 +3,23 @@ import { useState } from "react"
 
 export const LoadingScreen = ({ onComplete }) => {
     const [text, setText] = useState("")
-    const fullText = "<Getting things ready... just like I do in production! />";
+    const fullText = "<Fetching portfolio data from localhost...  />";
 
     useEffect(() => {
         let index = 0;
-        let delay = 80;
-        const pausePoints = [22,23,24];
-         const type = () => {
-            if (index <= fullText.length) {
-                setText(fullText.substring(0, index));
-                index++;
+        const interval = setInterval(() => {
+            setText(fullText.substring(0, index))
+            index++;
 
-                if (pausePoints.includes(index - 1)) {
-                    delay = 2000;
-                } else {
-                    delay = 80;
-                }
+            if(index > fullText.length)
+                clearInterval(interval);
 
-                setTimeout(type, delay);
-            } else {
-                setTimeout(() => {
-                    onComplete();
-                }, 1000);
-            }
-        };
+            setTimeout(() => {
+                onComplete();
+            }, 5000)
 
-        type(); // initiate typing
+        }, 70);
+        return () => clearInterval(interval);
     }, [onComplete]);
 
     return <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
