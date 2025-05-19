@@ -1,4 +1,36 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import {
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaJava,
+  FaStripe,
+  FaGithub,
+  FaFigma,
+} from "react-icons/fa";
+
+import {
+  SiMongodb,
+  SiExpress,
+  SiJupyter,
+  SiScikitlearn,
+  SiPandas,
+  SiTailwindcss,
+} from "react-icons/si";
+
+const techIcons = {
+  React: <FaReact />,
+  "Node.js": <FaNodeJs />,
+  "Express.js": <SiExpress />,
+  MongoDB: <SiMongodb />,
+  Python: <FaPython />,
+  Stripe: <FaStripe />,
+  Figma: <FaFigma />,
+  Jupyter: <SiJupyter />,
+  Pandas: <SiPandas />,
+  "Scikit-learn": <SiScikitlearn />,
+  TailwindCSS: <SiTailwindcss />,
+};
 
 export const Projects = () => {
   const projects = [
@@ -6,7 +38,15 @@ export const Projects = () => {
       title: "Beaded Muse (Capstone Project)",
       description:
         "Developed a complete Admin Panel for a MERN stack-based e-commerce platform. Implemented secure Stripe payments, GST calculation, responsive UI/UX, and real-time order/product management.",
-      tech: ["React", "Node.js", "Express.js", "MongoDB", "Stripe", "Jira", "Figma"],
+      tech: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Stripe",
+        "Jira",
+        "Figma",
+      ],
       links: [
         {
           label: "🔗 Admin Panel (Live)",
@@ -69,7 +109,10 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center py-20 bg-theme text-theme">
+    <section
+      id="projects"
+      className="min-h-screen flex items-center justify-center py-20 bg-theme text-theme"
+    >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 gradient-accent text-center">
@@ -88,8 +131,14 @@ export const Projects = () => {
                   {project.tech.map((tech, key) => (
                     <span
                       key={key}
-                      className="badge py-1 px-3 rounded-full shadow-sm"
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
+    hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
                     >
+                      {techIcons[tech] && (
+                        <span className="text-inherit text-lg">
+                          {techIcons[tech]}
+                        </span>
+                      )}
                       {tech}
                     </span>
                   ))}

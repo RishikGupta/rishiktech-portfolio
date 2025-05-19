@@ -1,41 +1,67 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
+import {
+  FaReact,
+  FaVuejs,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaPython,
+  FaNodeJs,
+  FaJava,
+  FaPhp,
+  FaDatabase,
+  FaGitAlt,
+  FaBootstrap,
+} from "react-icons/fa";
+
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiMongodb,
+  SiGraphql,
+  SiJest,
+  SiFigma,
+  SiCplusplus,
+  SiPostgresql,
+  SiStripe,
+} from "react-icons/si";
 
 export const About = () => {
-  const frontendSkills = [
-    "React",
-    "Vue",
-    "Typescript",
-    "TailwindCSS",
-    "Figma",
-    "Bootstrap",
-    "Jest",
-    "Py-Qt",
-    "SSR",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "Data Structures & Algorithms",
-    "GUI Development",
-  ];
+const frontendSkills = [
+  { label: "React", icon: <FaReact /> },
+  { label: "Vue", icon: <FaVuejs /> },
+  { label: "Typescript", icon: <SiTypescript /> },
+  { label: "TailwindCSS", icon: <SiTailwindcss /> },
+  { label: "Figma", icon: <SiFigma /> },
+  { label: "Bootstrap", icon: <FaBootstrap /> },
+  { label: "Jest", icon: <SiJest /> },
+  { label: "Py-Qt" },
+  { label: "SSR" },
+  { label: "JavaScript", icon: <FaJs /> },
+  { label: "HTML", icon: <FaHtml5 /> },
+  { label: "CSS", icon: <FaCss3Alt /> },
+  { label: "Data Structures & Algorithms" },
+  { label: "GUI Development" },
+];
 
-  const backendSkills = [
-    "Node.js",
-    "MongoDB",
-    "GraphQL",
-    "REST APIs",
-    "Express.js",
-    "Java",
-    "Python",
-    "C/C#/C++",
-    "PHP",
-    "Stripe",
-    "SQL",
-    "Machine Learning",
-    "Selenium",
-    "Android Studio",
-    "OOPS",
-  ];
+const backendSkills = [
+  { label: "Node.js", icon: <FaNodeJs /> },
+  { label: "MongoDB", icon: <SiMongodb /> },
+  { label: "GraphQL", icon: <SiGraphql /> },
+  { label: "REST APIs" },
+  { label: "Express.js" },
+  { label: "Java", icon: <FaJava /> },
+  { label: "Python", icon: <FaPython /> },
+  { label: "C/C#/C++", icon: <SiCplusplus /> },
+  { label: "PHP", icon: <FaPhp /> },
+  { label: "Stripe", icon: <SiStripe /> },
+  { label: "SQL", icon: <FaDatabase /> },
+  { label: "Machine Learning" },
+  { label: "Selenium" },
+  { label: "Android Studio" },
+  { label: "OOPS" },
+];
 
   return (
     <section
@@ -71,30 +97,34 @@ export const About = () => {
               <div className="rounded-xl p-6 border hover:border-blue-500 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4 text-theme">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
-                  {frontendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
-             hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  {frontendSkills.map(({ label, icon }, key) => (
+  <span
+    key={key}
+    className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
+    hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
+  >
+    {icon && <span className="text-lg">{icon}</span>}
+    {label}
+  </span>
+))}
+
                 </div>
               </div>
 
               <div className="rounded-xl p-6 border hover:border-blue-500 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4 text-theme">Backend</h3>
                 <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
-             hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  {backendSkills.map(({ label, icon }, key) => (
+  <span
+    key={key}
+    className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
+    hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
+  >
+    {icon && <span className="text-lg">{icon}</span>}
+    {label}
+  </span>
+))}
+
                 </div>
               </div>
             </div>
@@ -178,8 +208,12 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    •	Instructed over 400 students in foundational and advanced technologies (C/C++, Java, HTML/CSS, DSA, etc.) using 50+ live project examples, simulating full-stack problem-solving scenarios. <br/> 
-                    •	Created structured curriculum to reinforce coding logic and system design, enabling students to build scalable, production-level applications.
+                    • Instructed over 400 students in foundational and advanced
+                    technologies (C/C++, Java, HTML/CSS, DSA, etc.) using 50+
+                    live project examples, simulating full-stack problem-solving
+                    scenarios. <br />• Created structured curriculum to
+                    reinforce coding logic and system design, enabling students
+                    to build scalable, production-level applications.
                   </p>
                 </div>
 
@@ -191,11 +225,11 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    •	Instructed over 400 students in C/C++, HTML, CSS, Java, and
-                    Linux System Architecture. <br/>
-                    •	Led 50+ live project-based
-                    learning sessions that emphasized real-time problem solving
-                    and foundational full stack development skills.
+                    • Instructed over 400 students in C/C++, HTML, CSS, Java,
+                    and Linux System Architecture. <br />• Led 50+ live
+                    project-based learning sessions that emphasized real-time
+                    problem solving and foundational full stack development
+                    skills.
                   </p>
                 </div>
 
@@ -207,11 +241,11 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    •	Delivered structured training in C/C++, Python, and web
-                    technologies to 100+ students.<br/> 
-                    •	Guided learners through building front-end and back-end applications, focusing on
-                    the application of programming concepts in real-world
-                    development.
+                    • Delivered structured training in C/C++, Python, and web
+                    technologies to 100+ students.
+                    <br />• Guided learners through building front-end and
+                    back-end applications, focusing on the application of
+                    programming concepts in real-world development.
                   </p>
                 </div>
 
@@ -223,11 +257,11 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    •	Created and delivered Python and Machine Learning curriculum
-                    for college students across India. <br/>
-                    •	Collaborated with two teams to design and upload recorded technical content,
-                    enabling asynchronous learning for full stack fundamentals
-                    and data-driven applications.
+                    • Created and delivered Python and Machine Learning
+                    curriculum for college students across India. <br />•
+                    Collaborated with two teams to design and upload recorded
+                    technical content, enabling asynchronous learning for full
+                    stack fundamentals and data-driven applications.
                   </p>
                 </div>
 
@@ -239,8 +273,11 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    •	Entrusted with front-end design of company's website utilizing WordPress and Woo Commerce.<br/>
-                    •	Generated application UI using Custom Themes and Advanced Custom Fields, functionality, and clean code keeping user satisfaction in mind.
+                    • Entrusted with front-end design of company's website
+                    utilizing WordPress and Woo Commerce.
+                    <br />• Generated application UI using Custom Themes and
+                    Advanced Custom Fields, functionality, and clean code
+                    keeping user satisfaction in mind.
                   </p>
                 </div>
               </div>

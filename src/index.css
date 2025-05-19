@@ -132,10 +132,13 @@
 }
 
 .gradient-accent {
+  display: inline-block;
   background-image: linear-gradient(to right, var(--accent-color), var(--accent-light));
-  -webkit-background-clip: text;
+  background-clip: text;              
+  -webkit-background-clip: text;      
   -webkit-text-fill-color: transparent;
 }
+
 
 .gradient-glow {
   background-image: linear-gradient(to right, var(--accent-color), var(--accent-light));
