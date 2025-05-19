@@ -49,7 +49,7 @@ export const About = () => {
           </h2>
 
           <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all shadow-lg bg-section">
-            <p className="text-muted mb-6 leading-relaxed text-base">
+            <p className="text-muted text-lg mb-6 leading-relaxed">
               My journey includes leading the Admin Panel development for{" "}
               <strong>Beaded Muse</strong>, a full-stack e-commerce platform
               built as my <strong>capstone project at Conestoga College</strong>
@@ -58,7 +58,7 @@ export const About = () => {
               MongoDB, as well as core programming languages such as Java, C,
               C++, and Python.
             </p>
-            <p className="text-muted mb-6 leading-relaxed text-base">
+            <p className="text-muted text-lg mb-6 leading-relaxed">
               I've also guided many through mastering Data Structures and
               Algorithms (DSA) for academic and technical interview success.
               Whether it's building dynamic Stripe-integrated systems, crafting
@@ -74,7 +74,7 @@ export const About = () => {
                   {frontendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-badge text-badge py-1.5 px-4 rounded-full text-sm transition duration-200 
+                      className="bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
              hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
                     >
                       {tech}
@@ -89,7 +89,7 @@ export const About = () => {
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-badge text-badge py-1.5 px-4 rounded-full text-sm transition duration-200 
+                      className="bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
              hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
                     >
                       {tech}
@@ -103,17 +103,17 @@ export const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {/* Education */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition bg-section">
-              <h3 className="text-xl font-bold mb-4 text-theme flex items-center gap-2">
+              <h3 className="text-3xl font-bold mb-4 text-theme flex items-center gap-2">
                 <FaGraduationCap className="text-accent" /> Education
               </h3>
-              <ul className="list-disc list-inside text-theme space-y-2 text-sm">
+              <ul className="list-disc list-inside text-theme space-y-2">
                 <li>
                   <strong>Post Graduate Degree in Web Development</strong> -
                   Conestoga College (January 2024 - April 2025)
-                  <p className="ml-5 mt-1 text-muted font-bold text-xs">
+                  <p className="ml-5 mt-1 text-muted font-bold">
                     Relevant Coursework:
                   </p>
-                  <ul className="list-disc list-inside ml-5 mt-1 text-muted font-medium text-xs italic">
+                  <ul className="list-disc list-inside ml-5 mt-1 text-muted font-medium italic">
                     <li>Web Development Foundations (HTML, CSS, JavaScript)</li>
                     <li>JavaScript Frameworks (React, Vue)</li>
                     <li>
@@ -134,11 +134,11 @@ export const About = () => {
                 </li>
                 <li>
                   <strong>B.Tech in Computer Science</strong> - Bharati
-                  Vidyapeeth's College of Engineering (Aug 2017 – Sep 2021)
-                  <p className="ml-5 mt-1 text-muted font-bold text-xs">
+                  Vidyapeeth's College of Engineering (Aug 2017 - Sep 2021)
+                  <p className="ml-5 mt-1 text-muted font-bold">
                     Relevant Coursework:
                   </p>
-                  <ul className="list-disc list-inside ml-5 mt-1 font-medium text-muted text-xs italic">
+                  <ul className="list-disc list-inside ml-5 mt-1 font-medium text-muted italic">
                     <li>Data Structures and Algorithms</li>
                     <li>Object Oriented Programming</li>
                     <li>Web Technology</li>
@@ -165,38 +165,35 @@ export const About = () => {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
   hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition bg-section"
             >
-              <h3 className="text-xl font-bold mb-4 text-theme flex items-center gap-2">
+              <h3 className="text-3xl font-bold mb-4 text-theme flex items-center gap-2">
                 <FaBriefcase className="text-accent" /> Work Experience
               </h3>
-              <div className="space-y-4 text-muted text-sm">
+              <div className="space-y-4 text-muted">
                 <div>
                   <h4 className="font-semibold text-theme">
                     Full Stack Tutor & Technical Mentor - Super Prof & Varsity
                     Tutors (Part-Time)
-                    <span className="block text-accent text-xs italic">
+                    <span className="block text-accent italic">
                       January 2024 - Present
                     </span>
                   </h4>
                   <p>
-                    Taught 50+ students across 90+ hours via online platforms,
-                    delivering customized lessons in full-stack web development
-                    and core programming (JavaScript, React, Node.js, Java,
-                    Python, etc.). Supported learners through academic projects,
-                    technical interview prep, and real-world problem-solving
-                    using the MERN stack.
+                    •	Instructed over 400 students in foundational and advanced technologies (C/C++, Java, HTML/CSS, DSA, etc.) using 50+ live project examples, simulating full-stack problem-solving scenarios. <br/> 
+                    •	Created structured curriculum to reinforce coding logic and system design, enabling students to build scalable, production-level applications.
                   </p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold text-theme">
                     Technical Trainer - Cantilever Labs
-                    <span className="block text-accent text-xs italic">
+                    <span className="block text-accent italic">
                       January 2023 - October 2023
                     </span>
                   </h4>
                   <p>
-                    Instructed over 400 students in C/C++, HTML, CSS, Java, and
-                    Linux System Architecture. Led 50+ live project-based
+                    •	Instructed over 400 students in C/C++, HTML, CSS, Java, and
+                    Linux System Architecture. <br/>
+                    •	Led 50+ live project-based
                     learning sessions that emphasized real-time problem solving
                     and foundational full stack development skills.
                   </p>
@@ -205,14 +202,14 @@ export const About = () => {
                 <div>
                   <h4 className="font-semibold text-theme">
                     Software Trainer - Edslash Robotics Services
-                    <span className="block text-accent text-xs italic">
+                    <span className="block text-accent italic">
                       October 2022 - October 2023
                     </span>
                   </h4>
                   <p>
-                    Delivered structured training in C/C++, Python, and web
-                    technologies to 100+ students. Guided learners through
-                    building front-end and back-end applications, focusing on
+                    •	Delivered structured training in C/C++, Python, and web
+                    technologies to 100+ students.<br/> 
+                    •	Guided learners through building front-end and back-end applications, focusing on
                     the application of programming concepts in real-world
                     development.
                   </p>
@@ -221,14 +218,14 @@ export const About = () => {
                 <div>
                   <h4 className="font-semibold text-theme">
                     Technology Trainer - Hematite Infotech Pvt. Ltd.
-                    <span className="block text-accent text-xs italic">
+                    <span className="block text-accent italic">
                       April 2022 - September 2022
                     </span>
                   </h4>
                   <p>
-                    Created and delivered Python and Machine Learning curriculum
-                    for college students across India. Collaborated with two
-                    teams to design and upload recorded technical content,
+                    •	Created and delivered Python and Machine Learning curriculum
+                    for college students across India. <br/>
+                    •	Collaborated with two teams to design and upload recorded technical content,
                     enabling asynchronous learning for full stack fundamentals
                     and data-driven applications.
                   </p>
@@ -237,15 +234,13 @@ export const About = () => {
                 <div>
                   <h4 className="font-semibold text-theme">
                     Software Developer - ULaunch
-                    <span className="block text-accent text-xs italic">
+                    <span className="block text-accent italic">
                       October 2021 - March 2022
                     </span>
                   </h4>
                   <p>
-                    Led front-end development for the company website using
-                    WordPress and WooCommerce. Implemented custom themes,
-                    interactive UI elements, and clean responsive layouts with a
-                    focus on usability and business goals.
+                    •	Entrusted with front-end design of company's website utilizing WordPress and Woo Commerce.<br/>
+                    •	Generated application UI using Custom Themes and Advanced Custom Fields, functionality, and clean code keeping user satisfaction in mind.
                   </p>
                 </div>
               </div>

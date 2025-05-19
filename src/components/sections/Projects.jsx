@@ -88,14 +88,14 @@ export const Projects = () => {
                   {project.tech.map((tech, key) => (
                     <span
                       key={key}
-                      className="badge py-1 px-3 rounded-full text-sm shadow-sm"
+                      className="badge py-1 px-3 rounded-full shadow-sm"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex flex-col space-y-2 text-sm">
+                <div className="flex flex-col space-y-2">
                   {project.links.map((link, key) => (
                     <a
                       key={key}
