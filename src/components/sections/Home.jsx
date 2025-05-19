@@ -38,7 +38,7 @@ export const Home = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/rishikgupta7619/" // Replace with your actual LinkedIn
+              href="https://www.linkedin.com/in/rishikgupta7619/"
               target="_blank"
               rel="noopener noreferrer"
               className="py-3 px-6 rounded font-medium button-outline flex items-center gap-2"
@@ -47,7 +47,7 @@ export const Home = () => {
             </a>
 
             <a
-              href="/Rishik_Gupta_Developer_Resume.pdf" // Make sure this file is in /public directory
+              href="/Rishik_Gupta_Developer_Resume.pdf"
               download
               className="py-3 px-6 rounded font-medium button-outline flex items-center gap-2"
             >
