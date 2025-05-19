@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { FaLinkedin, FaDownload } from "react-icons/fa";
 
 export const Home = () => {
   return (
@@ -21,19 +22,36 @@ export const Home = () => {
             project.
           </p>
 
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-wrap justify-center gap-4">
             <a
               href="#projects"
-              className="bg-blue-500 py-3 px-6 rounded 
-                font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+              className="bg-blue-500 py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
               View Projects
             </a>
+
             <a
               href="#contact"
               className="py-3 px-6 rounded font-medium button-outline"
             >
               Contact Me
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/rishikgupta7619/" // Replace with your actual LinkedIn
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-3 px-6 rounded font-medium button-outline flex items-center gap-2"
+            >
+              <FaLinkedin /> LinkedIn
+            </a>
+
+            <a
+              href="/Rishik_Gupta_Developer_Resume.pdf" // Make sure this file is in /public directory
+              download
+              className="py-3 px-6 rounded font-medium button-outline flex items-center gap-2"
+            >
+              <FaDownload /> Resume
             </a>
           </div>
         </div>
