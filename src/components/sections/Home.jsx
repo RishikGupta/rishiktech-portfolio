@@ -32,7 +32,7 @@ export const Home = () => {
 
             <a
               href="#contact"
-              className="py-3 px-6 rounded font-medium button-outline"
+              className="bg-blue-500 py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
               Contact Me
             </a>
