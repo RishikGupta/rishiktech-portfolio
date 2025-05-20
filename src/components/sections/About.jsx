@@ -28,40 +28,40 @@ import {
 } from "react-icons/si";
 
 export const About = () => {
-const frontendSkills = [
-  { label: "React", icon: <FaReact /> },
-  { label: "Vue", icon: <FaVuejs /> },
-  { label: "Typescript", icon: <SiTypescript /> },
-  { label: "TailwindCSS", icon: <SiTailwindcss /> },
-  { label: "Figma", icon: <SiFigma /> },
-  { label: "Bootstrap", icon: <FaBootstrap /> },
-  { label: "Jest", icon: <SiJest /> },
-  { label: "Py-Qt" },
-  { label: "SSR" },
-  { label: "JavaScript", icon: <FaJs /> },
-  { label: "HTML", icon: <FaHtml5 /> },
-  { label: "CSS", icon: <FaCss3Alt /> },
-  { label: "Data Structures & Algorithms" },
-  { label: "GUI Development" },
-];
+  const frontendSkills = [
+    { label: "React", icon: <FaReact /> },
+    { label: "Vue", icon: <FaVuejs /> },
+    { label: "Typescript", icon: <SiTypescript /> },
+    { label: "TailwindCSS", icon: <SiTailwindcss /> },
+    { label: "Figma", icon: <SiFigma /> },
+    { label: "Bootstrap", icon: <FaBootstrap /> },
+    { label: "Jest", icon: <SiJest /> },
+    { label: "Py-Qt" },
+    { label: "SSR" },
+    { label: "JavaScript", icon: <FaJs /> },
+    { label: "HTML", icon: <FaHtml5 /> },
+    { label: "CSS", icon: <FaCss3Alt /> },
+    { label: "Data Structures & Algorithms" },
+    { label: "GUI Development" },
+  ];
 
-const backendSkills = [
-  { label: "Node.js", icon: <FaNodeJs /> },
-  { label: "MongoDB", icon: <SiMongodb /> },
-  { label: "GraphQL", icon: <SiGraphql /> },
-  { label: "REST APIs" },
-  { label: "Express.js" },
-  { label: "Java", icon: <FaJava /> },
-  { label: "Python", icon: <FaPython /> },
-  { label: "C/C#/C++", icon: <SiCplusplus /> },
-  { label: "PHP", icon: <FaPhp /> },
-  { label: "Stripe", icon: <SiStripe /> },
-  { label: "SQL", icon: <FaDatabase /> },
-  { label: "Machine Learning" },
-  { label: "Selenium" },
-  { label: "Android Studio" },
-  { label: "OOPS" },
-];
+  const backendSkills = [
+    { label: "Node.js", icon: <FaNodeJs /> },
+    { label: "MongoDB", icon: <SiMongodb /> },
+    { label: "GraphQL", icon: <SiGraphql /> },
+    { label: "REST APIs" },
+    { label: "Express.js" },
+    { label: "Java", icon: <FaJava /> },
+    { label: "Python", icon: <FaPython /> },
+    { label: "C/C#/C++", icon: <SiCplusplus /> },
+    { label: "PHP", icon: <FaPhp /> },
+    { label: "Stripe", icon: <SiStripe /> },
+    { label: "SQL", icon: <FaDatabase /> },
+    { label: "Machine Learning" },
+    { label: "Selenium" },
+    { label: "Android Studio" },
+    { label: "OOPS" },
+  ];
 
   return (
     <section
@@ -98,16 +98,15 @@ const backendSkills = [
                 <h3 className="text-xl font-bold mb-4 text-theme">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map(({ label, icon }, key) => (
-  <span
-    key={key}
-    className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
+                    <span
+                      key={key}
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
     hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
-  >
-    {icon && <span className="text-lg">{icon}</span>}
-    {label}
-  </span>
-))}
-
+                    >
+                      {icon && <span className="text-lg">{icon}</span>}
+                      {label}
+                    </span>
+                  ))}
                 </div>
               </div>
 
@@ -115,16 +114,15 @@ const backendSkills = [
                 <h3 className="text-xl font-bold mb-4 text-theme">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {backendSkills.map(({ label, icon }, key) => (
-  <span
-    key={key}
-    className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
+                    <span
+                      key={key}
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
     hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
-  >
-    {icon && <span className="text-lg">{icon}</span>}
-    {label}
-  </span>
-))}
-
+                    >
+                      {icon && <span className="text-lg">{icon}</span>}
+                      {label}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -208,12 +206,12 @@ const backendSkills = [
                     </span>
                   </h4>
                   <p>
-                    • Instructed over 400 students in foundational and advanced
-                    technologies (C/C++, Java, HTML/CSS, DSA, etc.) using 50+
-                    live project examples, simulating full-stack problem-solving
-                    scenarios. <br />• Created structured curriculum to
-                    reinforce coding logic and system design, enabling students
-                    to build scalable, production-level applications.
+                    Delivered 90+ hours of personalized instruction in
+                    full-stack development and programming (JavaScript,
+                    HTML/CSS, DSA), using real-time tools like VS Code, GitHub,
+                    and collaborative coding platforms. <br/> 
+                    • Mentored diverse learners, including students with disabilities through
+                    academic projects, real-world challenges.
                   </p>
                 </div>
 
@@ -225,11 +223,12 @@ const backendSkills = [
                     </span>
                   </h4>
                   <p>
-                    • Instructed over 400 students in C/C++, HTML, CSS, Java,
-                    and Linux System Architecture. <br />• Led 50+ live
-                    project-based learning sessions that emphasized real-time
-                    problem solving and foundational full stack development
-                    skills.
+                    • Instructed over 400 students in foundational and advanced
+                    technologies (C/C++, Java, HTML/CSS, DSA, etc.) using 50+
+                    live project examples, simulating full-stack problem-solving
+                    scenarios. <br />• Created structured curriculum to
+                    reinforce coding logic and system design, enabling students
+                    to build scalable, production-level applications.
                   </p>
                 </div>
 
