@@ -148,6 +148,14 @@
   background-color: var(--navbar-bg);
 }
 
+/* index.css */
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease-in-out;
+}
+
+
 
 html,
 body {

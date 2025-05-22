@@ -1,29 +1,35 @@
 import { useEffect, useState } from "react";
 
-export const LoadingScreen = ({ onComplete }) => {
+export const LoadingScreen = ({ onComplete, fadeOut }) => {
   const [text, setText] = useState("");
   const fullText = "<Fetching portfolio data from the server.../>";
 
   useEffect(() => {
-    let index = 0;
-    const interval = setInterval(() => {
-      setText(fullText.substring(0, index));
-      index++;
+  let index = 0;
+  const interval = setInterval(() => {
+    setText(fullText.substring(0, index));
+    index++;
 
-      if (index > fullText.length) {
-        clearInterval(interval);
-      }
+    if (index > fullText.length) {
+      clearInterval(interval);
 
+      // ✅ Call onComplete ONLY ONCE after text animation finishes
       setTimeout(() => {
-        onComplete();
-      }, 3000);
-    }, 50);
+        onComplete(); // triggers isLoaded → then triggers fadeOut
+      }, 300); // adjust if needed
+    }
+  }, 50);
 
-    return () => clearInterval(interval);
-  }, [onComplete]);
+  return () => clearInterval(interval);
+}, [onComplete]);
+
 
   return (
-    <div className="fixed inset-0 z-50 bg-theme text-theme flex flex-col items-center justify-center transition-colors duration-300">
+    <div
+      className={`fixed inset-0 z-50 bg-theme text-theme flex flex-col items-center justify-center transition-opacity duration-700 ${
+        fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
+      }`}
+    >
       <div className="mb-4 text-4xl font-mono font-bold">
         {text} <span className="animate-blink ml-1">|</span>
       </div>
