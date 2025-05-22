@@ -134,10 +134,17 @@ export const About = () => {
               <h3 className="text-3xl font-bold mb-4 text-theme flex items-center gap-2">
                 <FaGraduationCap className="text-accent" /> Education
               </h3>
-              <ul className="list-disc list-inside text-theme space-y-2">
+              <ul className="list-inside text-theme space-y-2">
                 <li>
-                  <strong>Post Graduate Degree in Web Development</strong> -
-                  Conestoga College (January 2024 - April 2025)
+                  <h4 className="font-semibold text-theme">
+                    <strong>Post Graduate Degree in Web Development</strong> -
+                  Conestoga College 
+                  <span className="block text-accent italic">
+                      January 2024 - April 2025
+                    </span>
+                  </h4>
+                  
+                  <p><strong>GPA - 3.77 / 4.00</strong></p>
                   <p className="ml-5 mt-1 text-muted font-bold">
                     Relevant Coursework:
                   </p>
@@ -161,8 +168,14 @@ export const About = () => {
                   </ul>
                 </li>
                 <li>
-                  <strong>B.Tech in Computer Science</strong> - Bharati
-                  Vidyapeeth's College of Engineering (Aug 2017 - Sep 2021)
+                  <h4 className="font-semibold text-theme">
+                    <strong>B.Tech in Computer Science</strong> - Bharati
+                  Vidyapeeth's College of Engineering 
+                  <span className="block text-accent italic">
+                      Aug 2017 - Sep 2021
+                    </span>
+                  </h4>
+                  <p><strong>CGPA - 7.46 / 10.00</strong></p>
                   <p className="ml-5 mt-1 text-muted font-bold">
                     Relevant Coursework:
                   </p>
@@ -183,6 +196,27 @@ export const About = () => {
                     <li>Machine Learning</li>
                     <li>Switching Theory and Logic Design</li>
                     <li>Computer Graphics and Multimedia</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 className="font-semibold text-theme">
+                    <strong>Senior Secondary School Certificate</strong> -
+                  Springdales School
+                  <span className="block text-accent italic">
+                      April 2004 - May 2017
+                    </span>
+                  </h4>
+                  
+                  <p><strong>Percentage - 88.00% / 100.00</strong></p>
+                  <p className="ml-5 mt-1 text-muted font-bold">
+                    Relevant Coursework:
+                  </p>
+                  <ul className="list-disc list-inside ml-5 mt-1 text-muted font-medium italic">
+                    <li>Computer Science Fundamentals</li>
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>English</li>
                   </ul>
                 </li>
               </ul>
@@ -206,12 +240,15 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    Delivered 90+ hours of personalized instruction in
-                    full-stack development and programming (JavaScript,
-                    HTML/CSS, DSA), using real-time tools like VS Code, GitHub,
-                    and collaborative coding platforms. <br/> 
-                    • Mentored diverse learners, including students with disabilities through
-                    academic projects, real-world challenges.
+                    • Delivered <strong>90+ hours</strong> of personalized
+                    instruction in <strong>full-stack development</strong> and
+                    programming (<strong>JavaScript, HTML/CSS, DSA</strong>),
+                    using real-time tools like <strong>VS Code</strong>,{" "}
+                    <strong>GitHub</strong>, and collaborative coding platforms.
+                    <br />• Mentored diverse learners, including students with
+                    disabilities, through <strong>
+                      academic projects
+                    </strong> and <strong>real-world challenges</strong>.
                   </p>
                 </div>
 
@@ -223,12 +260,21 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    • Instructed over 400 students in foundational and advanced
-                    technologies (C/C++, Java, HTML/CSS, DSA, etc.) using 50+
-                    live project examples, simulating full-stack problem-solving
-                    scenarios. <br />• Created structured curriculum to
-                    reinforce coding logic and system design, enabling students
-                    to build scalable, production-level applications.
+                    • Instructed over <strong>400 students</strong> in
+                    foundational and advanced technologies using a structured{" "}
+                    <strong>180-hour curriculum</strong> covering{" "}
+                    <strong>React, Node.js, MongoDB</strong>, and advanced{" "}
+                    <strong>JavaScript frameworks</strong>, simulating
+                    full-stack problem-solving scenarios.
+                    <br />• Delivered <strong>50+ project-based labs</strong>,
+                    including food ordering apps, schedulers, and dynamic
+                    dashboards with <strong>REST APIs</strong>,{" "}
+                    <strong>Redux</strong>, and <strong>Tailwind CSS</strong>.
+                    <br />• Mentored students in{" "}
+                    <strong>core programming (C++, Java)</strong> and{" "}
+                    <strong>system design</strong>, aligning instruction with
+                    industry workflows, <strong>CI/CD</strong>, and{" "}
+                    <strong>deployment best practices</strong>.
                   </p>
                 </div>
 
@@ -240,11 +286,13 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    • Delivered structured training in C/C++, Python, and web
-                    technologies to 100+ students.
-                    <br />• Guided learners through building front-end and
-                    back-end applications, focusing on the application of
-                    programming concepts in real-world development.
+                    • Delivered structured training in <strong>C/C++</strong>,{" "}
+                    <strong>Python</strong>, and{" "}
+                    <strong>web technologies</strong> to{" "}
+                    <strong>100+ students</strong>.<br />• Guided learners
+                    through building <strong>front-end</strong> and{" "}
+                    <strong>back-end applications</strong>, focusing on
+                    real-world application of programming concepts.
                   </p>
                 </div>
 
@@ -256,11 +304,14 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    • Created and delivered Python and Machine Learning
-                    curriculum for college students across India. <br />•
-                    Collaborated with two teams to design and upload recorded
-                    technical content, enabling asynchronous learning for full
-                    stack fundamentals and data-driven applications.
+                    • Created and delivered <strong>Python</strong> and{" "}
+                    <strong>Machine Learning</strong> curriculum for college
+                    students across India.
+                    <br />• Collaborated with <strong>two teams</strong> to
+                    design and upload recorded technical content, enabling
+                    asynchronous learning in{" "}
+                    <strong>full-stack fundamentals</strong> and{" "}
+                    <strong>data-driven applications</strong>.
                   </p>
                 </div>
 
@@ -272,11 +323,18 @@ export const About = () => {
                     </span>
                   </h4>
                   <p>
-                    • Entrusted with front-end design of company's website
-                    utilizing WordPress and Woo Commerce.
-                    <br />• Generated application UI using Custom Themes and
-                    Advanced Custom Fields, functionality, and clean code
-                    keeping user satisfaction in mind.
+                    • Spearheaded the <strong>frontend revamp</strong> of the
+                    company website using <strong>WordPress</strong> and{" "}
+                    <strong>WooCommerce</strong>, enhancing visual appeal and
+                    responsiveness across devices.
+                    <br />• Developed dynamic UI components using{" "}
+                    <strong>Custom Themes</strong> and{" "}
+                    <strong>Advanced Custom Fields (ACF)</strong>, improving
+                    content management efficiency by <strong>40%</strong>.<br />
+                    • Ensured clean, modular <strong>PHP</strong> code and
+                    seamless integration with <strong>MySQL</strong>, resulting
+                    in a <strong>25% boost</strong> in page load performance and
+                    customer experience.
                   </p>
                 </div>
               </div>
