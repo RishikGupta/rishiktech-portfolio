@@ -79,7 +79,7 @@ export const About = () => {
               My journey includes leading the Admin Panel development for{" "}
               <strong>Beaded Muse</strong>, a full-stack e-commerce platform
               built as my <strong>capstone project at Conestoga College</strong>
-              . In parallel, I've taught over 500 students, covering both
+              . In parallel, I've taught over 400 students, covering both
               front-end technologies like HTML, CSS, JavaScript, React, and
               MongoDB, as well as core programming languages such as Java, C,
               C++, and Python.
@@ -138,13 +138,15 @@ export const About = () => {
                 <li>
                   <h4 className="font-semibold text-theme">
                     <strong>Post Graduate Degree in Web Development</strong> -
-                  Conestoga College 
-                  <span className="block text-accent italic">
+                    Conestoga College
+                    <span className="block text-accent italic">
                       January 2024 - April 2025
                     </span>
                   </h4>
-                  
-                  <p><strong>GPA - 3.77 / 4.00</strong></p>
+
+                  <p>
+                    <strong>GPA - 3.77 / 4.00</strong>
+                  </p>
                   <p className="ml-5 mt-1 text-muted font-bold">
                     Relevant Coursework:
                   </p>
@@ -170,12 +172,14 @@ export const About = () => {
                 <li>
                   <h4 className="font-semibold text-theme">
                     <strong>B.Tech in Computer Science</strong> - Bharati
-                  Vidyapeeth's College of Engineering 
-                  <span className="block text-accent italic">
+                    Vidyapeeth's College of Engineering
+                    <span className="block text-accent italic">
                       Aug 2017 - Sep 2021
                     </span>
                   </h4>
-                  <p><strong>CGPA - 7.46 / 10.00</strong></p>
+                  <p>
+                    <strong>CGPA - 7.46 / 10.00</strong>
+                  </p>
                   <p className="ml-5 mt-1 text-muted font-bold">
                     Relevant Coursework:
                   </p>
@@ -201,13 +205,15 @@ export const About = () => {
                 <li>
                   <h4 className="font-semibold text-theme">
                     <strong>Senior Secondary School Certificate</strong> -
-                  Springdales School
-                  <span className="block text-accent italic">
+                    Springdales School
+                    <span className="block text-accent italic">
                       April 2004 - May 2017
                     </span>
                   </h4>
-                  
-                  <p><strong>Percentage - 88.00% / 100.00</strong></p>
+
+                  <p>
+                    <strong>Percentage - 88.00% / 100.00</strong>
+                  </p>
                   <p className="ml-5 mt-1 text-muted font-bold">
                     Relevant Coursework:
                   </p>
