@@ -15,9 +15,9 @@ export const LoadingScreen = ({ onComplete, fadeOut }) => {
         clearInterval(interval);
         setTimeout(() => {
           onComplete();
-        }, 300); // allow a brief pause before fade starts
+        }, 200); // allow a brief pause before fade starts
       }
-    }, 50);
+    }, 20);
 
     return () => clearInterval(interval);
   }, [onComplete]);

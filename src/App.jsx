@@ -21,7 +21,7 @@ function App() {
     if (isLoaded) {
       const timeout = setTimeout(() => {
         setShowLoader(false);
-      }, 700); // match transition duration
+      }, 100); // match transition duration
       return () => clearTimeout(timeout);
     }
   }, [isLoaded]);
