@@ -88,7 +88,7 @@ export const About = () => {
                   {frontendSkills.map(({ label, icon }, key) => (
                     <span
                       key={key}
-                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full hover:bg-badge-hover hover:text-white shadow-sm"
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
                     >
                       {icon && <span className="text-lg">{icon}</span>}
                       {label}
@@ -105,7 +105,7 @@ export const About = () => {
                   {backendSkills.map(({ label, icon }, key) => (
                     <span
                       key={key}
-                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full hover:bg-badge-hover hover:text-white shadow-sm"
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
                     >
                       {icon && <span className="text-lg">{icon}</span>}
                       {label}
