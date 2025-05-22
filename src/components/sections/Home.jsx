@@ -35,14 +35,16 @@ export const Home = () => {
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="#projects"
-            className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+            className="border border-blue-500 text-blue-50
+ py-3 px-6 rounded font-medium flex items-center gap-2 text-theme hover:bg-blue-500 transition"
           >
             View Projects
           </a>
 
           <a
             href="#contact"
-            className="border border-blue-500 text-blue-500 py-3 px-6 rounded font-medium transition hover:bg-blue-500 hover:text-white"
+            className="border border-blue-500 text-blue-50
+ py-3 px-6 rounded font-medium flex items-center gap-2 text-theme hover:bg-blue-500 transition"
           >
             Contact Me
           </a>
