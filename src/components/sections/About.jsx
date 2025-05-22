@@ -74,7 +74,7 @@ export const About = () => {
             About Me
           </h2>
 
-          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all shadow-lg bg-section">
+          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all shadow-lg bg-section text-center">
             <p className="text-muted text-lg mb-6 leading-relaxed">
               My journey includes leading the Admin Panel development for{" "}
               <strong>Beaded Muse</strong>, a full-stack e-commerce platform
@@ -131,7 +131,7 @@ export const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {/* Education */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition bg-section">
-              <h3 className="text-3xl font-bold mb-4 text-theme flex items-center gap-2">
+              <h3 className="text-3xl font-bold mb-4 text-theme flex justify-center items-center gap-2">
                 <FaGraduationCap className="text-accent" /> Education
               </h3>
               <ul className="list-inside text-theme space-y-2">
@@ -227,7 +227,7 @@ export const About = () => {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
   hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition bg-section"
             >
-              <h3 className="text-3xl font-bold mb-4 text-theme flex items-center gap-2">
+              <h3 className="text-3xl font-bold mb-4 text-theme flex items-center justify-center gap-2">
                 <FaBriefcase className="text-accent" /> Work Experience
               </h3>
               <div className="space-y-4 text-muted">

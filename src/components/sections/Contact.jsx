@@ -28,7 +28,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center py-20 bg-theme text-theme">
       <RevealOnScroll>
-        <div className="px-4 w-screen max-w-3xl mx-auto sm:px-6 lg:px-8">
+        <div className="px-4 w-screen max-w-3xl mx-auto sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-8 gradient-accent text-center">
             Get In Touch
           </h2>
