@@ -113,15 +113,14 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center py-20 bg-theme text-theme"
     >
-      <RevealOnScroll>
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-8 gradient-accent text-center">
-            Featured Projects
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.map((project, index) => (
+      <div className="max-w-5xl mx-auto px-4 text-center">
+        <h2 className="text-3xl font-bold mb-8 gradient-accent text-center">
+          Featured Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {projects.map((project, index) => (
+            <RevealOnScroll key={index}>
               <div
-                key={index}
                 className="p-6 rounded-xl border border-theme hover:-translate-y-1 transition hover:border-[var(--accent-color)]/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] bg-card"
               >
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
@@ -131,8 +130,7 @@ export const Projects = () => {
                   {project.tech.map((tech, key) => (
                     <span
                       key={key}
-                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
-    hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
                     >
                       {techIcons[tech] && (
                         <span className="text-inherit text-lg">
@@ -158,10 +156,10 @@ export const Projects = () => {
                   ))}
                 </div>
               </div>
-            ))}
-          </div>
+            </RevealOnScroll>
+          ))}
         </div>
-      </RevealOnScroll>
+      </div>
     </section>
   );
 };

@@ -34,56 +34,64 @@ export const Contact = () => {
           </h2>
           <form className="space-y-6" onSubmit={handleSubmit}>
             {/* Name */}
-            <div className="relative group">
-              <div className="absolute -inset-0.5 gradient-glow rounded-lg blur opacity-0 group-focus-within:opacity-100 transition duration-300" />
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                value={formData.name}
-                placeholder="Name..."
-                className="relative w-full bg-card text-theme placeholder-muted px-4 py-3 rounded-lg border border-theme focus:outline-none"
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              />
-            </div>
+            <RevealOnScroll>
+              <div className="relative group">
+                <div className="absolute -inset-0.5 gradient-glow rounded-lg blur opacity-0 group-focus-within:opacity-100 transition duration-300" />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  placeholder="Name..."
+                  className="relative w-full bg-card text-theme placeholder-muted px-4 py-3 rounded-lg border border-theme focus:outline-none"
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                />
+              </div>
+            </RevealOnScroll>
 
             {/* Email */}
-            <div className="relative group">
-              <div className="absolute -inset-0.5 gradient-glow rounded-lg blur opacity-0 group-focus-within:opacity-100 transition duration-300" />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                value={formData.email}
-                placeholder="example@gmail.com"
-                className="relative w-full bg-card text-theme placeholder-muted px-4 py-3 rounded-lg border border-theme focus:outline-none"
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              />
-            </div>
+            <RevealOnScroll>
+              <div className="relative group">
+                <div className="absolute -inset-0.5 gradient-glow rounded-lg blur opacity-0 group-focus-within:opacity-100 transition duration-300" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  placeholder="example@gmail.com"
+                  className="relative w-full bg-card text-theme placeholder-muted px-4 py-3 rounded-lg border border-theme focus:outline-none"
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                />
+              </div>
+            </RevealOnScroll>
 
             {/* Message */}
-            <div className="relative group">
-              <div className="absolute -inset-0.5 gradient-glow rounded-lg blur opacity-0 group-focus-within:opacity-100 transition duration-300" />
-              <textarea
-                id="message"
-                name="message"
-                required
-                value={formData.message}
-                rows={5}
-                placeholder="Your Message..."
-                className="relative w-full bg-card text-theme placeholder-muted px-4 py-3 rounded-lg border border-theme focus:outline-none resize-none"
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              />
-            </div>
+            <RevealOnScroll>
+              <div className="relative group">
+                <div className="absolute -inset-0.5 gradient-glow rounded-lg blur opacity-0 group-focus-within:opacity-100 transition duration-300" />
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  value={formData.message}
+                  rows={5}
+                  placeholder="Your Message..."
+                  className="relative w-full bg-card text-theme placeholder-muted px-4 py-3 rounded-lg border border-theme focus:outline-none resize-none"
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                />
+              </div>
+            </RevealOnScroll>
 
-            <button
-              type="submit"
-              className="w-full bg-accent text-button py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-accent"
-            >
-              Send Message
-            </button>
+            <RevealOnScroll>
+              <button
+                type="submit"
+                className="w-full bg-accent text-button py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-accent"
+              >
+                Send Message
+              </button>
+            </RevealOnScroll>
           </form>
         </div>
       </RevealOnScroll>

@@ -14,7 +14,6 @@ import {
   FaGitAlt,
   FaBootstrap,
 } from "react-icons/fa";
-
 import {
   SiTypescript,
   SiTailwindcss,
@@ -68,40 +67,28 @@ export const About = () => {
       id="about"
       className="min-h-screen flex items-center justify-center py-20 bg-theme text-theme"
     >
-      <RevealOnScroll>
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            About Me
-          </h2>
+      <div className="max-w-5xl mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+          About Me
+        </h2>
 
-          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all shadow-lg bg-section text-center">
-            <p className="text-muted text-lg mb-6 leading-relaxed">
-              My journey includes leading the Admin Panel development for{" "}
-              <strong>Beaded Muse</strong>, a full-stack e-commerce platform
-              built as my <strong>capstone project at Conestoga College</strong>
-              . In parallel, I've taught over 400 students, covering both
-              front-end technologies like HTML, CSS, JavaScript, React, and
-              MongoDB, as well as core programming languages such as Java, C,
-              C++, and Python.
-            </p>
-            <p className="text-muted text-lg mb-6 leading-relaxed">
-              I've also guided many through mastering Data Structures and
-              Algorithms (DSA) for academic and technical interview success.
-              Whether it's building dynamic Stripe-integrated systems, crafting
-              responsive UI/UX, or mentoring learners with patience and clarity,
-              I bring precision, creativity, and empathy into everything I
-              build.
-            </p>
+        <div className="rounded-xl p-8 border border-white/10 shadow-lg bg-section text-center">
+          <p className="text-muted text-lg mb-6 leading-relaxed">
+            My journey includes leading the Admin Panel development for <strong>Beaded Muse</strong>, a full-stack e-commerce platform built as my <strong>capstone project</strong> at Conestoga College. I've taught over <strong>400 students</strong> in both front-end and back-end technologies including HTML, CSS, React, Node.js, and Python.
+          </p>
+          <p className="text-muted text-lg mb-6 leading-relaxed">
+            From Stripe integrations to UI/UX design in Figma, I combine technical expertise with teaching experience to build scalable, user-focused applications.
+          </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-              <div className="rounded-xl p-6 border hover:border-blue-500 hover:-translate-y-1 transition-all">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <RevealOnScroll>
+              <div className="rounded-xl p-6 border hover:border-blue-500 transition-all">
                 <h3 className="text-xl font-bold mb-4 text-theme">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map(({ label, icon }, key) => (
                     <span
                       key={key}
-                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
-    hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full hover:bg-badge-hover hover:text-white shadow-sm"
                     >
                       {icon && <span className="text-lg">{icon}</span>}
                       {label}
@@ -109,15 +96,16 @@ export const About = () => {
                   ))}
                 </div>
               </div>
+            </RevealOnScroll>
 
-              <div className="rounded-xl p-6 border hover:border-blue-500 hover:-translate-y-1 transition-all">
+            <RevealOnScroll>
+              <div className="rounded-xl p-6 border hover:border-blue-500 transition-all">
                 <h3 className="text-xl font-bold mb-4 text-theme">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {backendSkills.map(({ label, icon }, key) => (
                     <span
                       key={key}
-                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 
-    hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full hover:bg-badge-hover hover:text-white shadow-sm"
                     >
                       {icon && <span className="text-lg">{icon}</span>}
                       {label}
@@ -125,10 +113,11 @@ export const About = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </RevealOnScroll>
           </div>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {/* Education */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition bg-section">
               <h3 className="text-3xl font-bold mb-4 text-theme flex justify-center items-center gap-2">
@@ -346,8 +335,7 @@ export const About = () => {
               </div>
             </div>
           </div>
-        </div>
-      </RevealOnScroll>
+      </div>
     </section>
   );
 };
