@@ -191,29 +191,6 @@ export const About = () => {
                     <li>Computer Graphics and Multimedia</li>
                   </ul>
                 </li>
-                <li>
-                  <h4 className="font-semibold text-theme">
-                    <strong>Senior Secondary School Certificate</strong> -
-                    Springdales School
-                    <span className="block text-accent italic">
-                      April 2004 - May 2017
-                    </span>
-                  </h4>
-
-                  <p>
-                    <strong>Percentage - 88.00% / 100.00</strong>
-                  </p>
-                  <p className="ml-5 mt-1 text-muted font-bold">
-                    Relevant Coursework:
-                  </p>
-                  <ul className="list-disc list-inside ml-5 mt-1 text-muted font-medium italic">
-                    <li>Computer Science Fundamentals</li>
-                    <li>Mathematics</li>
-                    <li>Physics</li>
-                    <li>Chemistry</li>
-                    <li>English</li>
-                  </ul>
-                </li>
               </ul>
             </div>
 
