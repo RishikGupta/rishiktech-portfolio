@@ -5,7 +5,7 @@ export const Home = () => {
     <section
       aria-label="Rishik Gupta Portfolio Introduction"
       id="home"
-      className="min-h-screen flex items-center justify-center relative bg-theme text-theme"
+      className="min-h-screen flex items-center justify-center bg-theme text-theme"
     >
       <header className="text-center z-10 px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-accent leading-tight">
