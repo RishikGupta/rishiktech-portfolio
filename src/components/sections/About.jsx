@@ -13,6 +13,12 @@ import {
   FaDatabase,
   FaGitAlt,
   FaBootstrap,
+  FaCogs,
+  FaCodeBranch,
+  FaWindowMaximize,
+  FaServer,
+  FaNetworkWired,
+  FaRobot
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -24,10 +30,16 @@ import {
   SiCplusplus,
   SiPostgresql,
   SiStripe,
+  SiNextdotjs,
+  SiSelenium,
+  SiExpress,
+  SiAndroidstudio,
+  SiAmazondynamodb
 } from "react-icons/si";
 
 export const About = () => {
   const frontendSkills = [
+    { label: "Next.js", icon: <SiNextdotjs /> },
     { label: "React", icon: <FaReact /> },
     { label: "Vue", icon: <FaVuejs /> },
     { label: "Typescript", icon: <SiTypescript /> },
@@ -35,31 +47,33 @@ export const About = () => {
     { label: "Figma", icon: <SiFigma /> },
     { label: "Bootstrap", icon: <FaBootstrap /> },
     { label: "Jest", icon: <SiJest /> },
-    { label: "Py-Qt" },
-    { label: "SSR" },
+    { label: "Py-Qt", icon: <FaWindowMaximize /> },
+    { label: "SSR", icon: <FaServer /> },
     { label: "JavaScript", icon: <FaJs /> },
     { label: "HTML", icon: <FaHtml5 /> },
     { label: "CSS", icon: <FaCss3Alt /> },
-    { label: "Data Structures & Algorithms" },
-    { label: "GUI Development" },
+    { label: "Data Structures & Algorithms", icon: <FaCodeBranch /> },
+    { label: "GUI Development", icon: <FaWindowMaximize /> },
   ];
 
   const backendSkills = [
+    { label: "AWS DynamoDB", icon: <SiAmazondynamodb /> },
     { label: "Node.js", icon: <FaNodeJs /> },
     { label: "MongoDB", icon: <SiMongodb /> },
     { label: "GraphQL", icon: <SiGraphql /> },
-    { label: "REST APIs" },
-    { label: "Express.js" },
+    { label: "REST APIs", icon: <FaNetworkWired /> },
+    { label: "Express.js", icon: <SiExpress /> },
     { label: "Java", icon: <FaJava /> },
     { label: "Python", icon: <FaPython /> },
     { label: "C/C#/C++", icon: <SiCplusplus /> },
     { label: "PHP", icon: <FaPhp /> },
     { label: "Stripe", icon: <SiStripe /> },
     { label: "SQL", icon: <FaDatabase /> },
-    { label: "Machine Learning" },
-    { label: "Selenium" },
-    { label: "Android Studio" },
-    { label: "OOPS" },
+    { label: "PostgreSQL", icon: <SiPostgresql /> },
+    { label: "Machine Learning", icon: <FaRobot /> },
+    { label: "Selenium", icon: <SiSelenium /> },
+    { label: "Android Studio", icon: <SiAndroidstudio /> },
+    { label: "OOPS", icon: <FaCogs /> },
   ];
 
   return (
@@ -84,7 +98,7 @@ export const About = () => {
             <RevealOnScroll>
               <div className="rounded-xl p-6 border hover:border-blue-500 transition-all">
                 <h3 className="text-xl font-bold mb-4 text-theme">Frontend</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex justify-center flex-wrap gap-2">
                   {frontendSkills.map(({ label, icon }, key) => (
                     <span
                       key={key}
@@ -101,7 +115,7 @@ export const About = () => {
             <RevealOnScroll>
               <div className="rounded-xl p-6 border hover:border-blue-500 transition-all">
                 <h3 className="text-xl font-bold mb-4 text-theme">Backend</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex justify-center flex-wrap gap-2">
                   {backendSkills.map(({ label, icon }, key) => (
                     <span
                       key={key}
