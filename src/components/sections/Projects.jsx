@@ -152,7 +152,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center justify-center py-20 bg-theme text-theme"
+      className="min-h-screen flex items-center justify-center py-20 m-0 bg-theme text-theme"
     >
       <div className="max-w-5xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-8 gradient-accent text-center">

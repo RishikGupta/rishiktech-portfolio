@@ -3,10 +3,9 @@ import { ThemeToggle } from "./ThemeToggle";
 export const MobileMenu = ({menuOpen, setMenuOpen}) => {
 
     return (
-        <div className={`fixed sticky top-0 left-0 w-full z-50 bg-[rgba(10,10,10,0.9)] backdrop-blur-sm
+        <div className={`absolute top-0 left-0 w-full z-0 h-screen bg-[rgba(10,10,10,0.92)] backdrop-blur-sm
   flex flex-col items-center justify-center
-  transition-opacity duration-300 ease-in-out
-  ${menuOpen ? "h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}`}
+  ${menuOpen ? "sticky z-100 h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}`}
         >
             <button 
             onClick={() => setMenuOpen(false)} 
@@ -53,7 +52,6 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
                 Contact
             </a>
             <ThemeToggle />
-
         </div>
     );
 };

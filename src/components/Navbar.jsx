@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
+import { MobileMenu } from "./MobileMenu";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {

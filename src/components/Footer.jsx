@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="w-full z-40 bg-navbar-bg backdrop-blur-lg border-t border-white/10 shadow-lg">
+    <footer className="w-full m-0 z-40 bg-navbar-bg backdrop-blur-lg border-t border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-400 font-mono">
         <div className="mb-4 md:mb-0 text-white font-bold text-xl">
           <a href="https://rishik.dev">
