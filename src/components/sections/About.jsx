@@ -218,11 +218,38 @@ export const About = () => {
               </h3>
               <div className="space-y-4 text-muted">
                 <div>
+  <h4 className="font-semibold text-theme">
+    Technical Lead (Contract · Part-Time) - TheHomeTaste
+    <span className="block text-accent italic">
+      Aug 2025 - Present · Kitchener, ON (Hybrid)
+    </span>
+  </h4>
+  <p>
+    • Leading development of <strong>TheHomeTaste</strong>, a curated{" "}
+    <strong>food-tech marketplace</strong> supported by{" "}
+    <strong>Conestoga College’s Venture Lab</strong>, working with coaches to
+    align technical growth with startup success.
+    <br />• Building three apps (Customer, Cook, Delivery) with{" "}
+    <strong>React Native, Node.js, MongoDB, Redis/Valkey, and AWS</strong>{" "}
+    (Amplify, Cognito, S3, CloudFront, EC2, SNS).
+    <br />• Designed scalable APIs for <strong>Kitchens, Menus, Orders,
+    Subscriptions, Ratings, and Analytics</strong>.
+    <br />• Developed <strong>analytics dashboards</strong> for cooks to track
+    revenue, unique customers, and dish-level sales.
+    <br />• Implemented secure <strong>OTP login</strong>, caching strategies,
+    and automated storage pipelines on <strong>AWS</strong>.
+    <br />• Conducting code reviews, mentoring junior developers, and
+    representing TheHomeTaste in technical discussions with{" "}
+    <strong>stakeholders and investors</strong>.
+  </p>
+</div>
+
+                <div>
                   <h4 className="font-semibold text-theme">
                     Full Stack Tutor & Technical Mentor - Super Prof & Varsity
                     Tutors (Part-Time)
                     <span className="block text-accent italic">
-                      January 2024 - Present
+                      June 2024 - August 2025
                     </span>
                   </h4>
                   <p>
